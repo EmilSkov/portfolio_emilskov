@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background: #606060;
+}
+#project, #about, #contact {
+		color: #fff;
+}	
+#header {
+	align-items: center;
+	flex-direction: row;
+	position: fixed;
+	width: 100%;
+	overflow: hidden;
+	top: 5%;
+}
+nav ul {
+	position: absolute;
+	top: 65%;
+	left: 45%;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+nav ul li {
+	list-style: none;
+	padding: 15px;
+}
+nav ul li a {
+	position: relative;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.5s;
+	padding: 5px 25px;
+}
+nav ul li a:hover {
+	color: #fff;
+	background: #ff9523;
+}
+nav ul li a:before {
+	content: '';
+	position: absolute;
+	bottom: 4px;
+	left: 4px;
+	width: 12px;
+	height: 12px;
+	border: 1px solid #ff9523;
+	border-width: 0 0 3px 3px;
+	transition: 0.5s;
+	opacity: 0;
+}
+nav ul li a:hover:before {
+	bottom: -6px;
+	left: -6px;
+	opacity: 1;
+}
+nav ul li a:after {
+	content: '';
+	position: absolute;
+	top: 2px;
+	right: 4px;
+	width: 12px;
+	height: 12px;
+	border: 1px solid #ff9523;
+	border-width: 3px 3px 0 0;
+	transition: 0.5s;
+	opacity: 0;
+}
+nav ul li a:hover:after {
+	top: -6px;
+	right: -6px;
+	opacity: 1;
+}
+.project_text {
+	width: 100%;
+	position: absolute;
+	top: 200px;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+.project_text h1 {
+	width: 100%;
+	height: auto;
+	color: #fff;
+	text-align: center;
+}
+.textbox {
+	width: 50%;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 20%;
+	left: 35%;
+	float: left;
+}
+.project_text h2 {
+	width: 60%;
+	height: auto;
+	color: #fff;
+	padding-top: 0;
+}
+.project_text p {
+	padding-top: 30px; 
+	font-size: 1em;
+	color: #FFFFFF;
+	width: 80%;
+	height: auto;
+}
